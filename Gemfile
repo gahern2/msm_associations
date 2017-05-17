@@ -53,4 +53,8 @@ group :test do
   # gem "database_cleaner"
   gem "shoulda-matchers"
   gem "webmock"
+
+
+gem "starter_generators", :git => "https://github.com/raghubetina/starter_generators"
+
 end
