@@ -20,6 +20,13 @@
       <dt> Number of characters </dt>
       <dd> <%= Character.where(:actor_id => @actor.id).count %> </dd>
 
+      <dt> List of movies </dt>
+      <dd>   <% @actor.movies.each do |movie| %>
+        <%= movie.title %>
+        <% end %>
+
+      </dd>
+
     </dl>
 
     <div class="btn-group btn-group-justified">
